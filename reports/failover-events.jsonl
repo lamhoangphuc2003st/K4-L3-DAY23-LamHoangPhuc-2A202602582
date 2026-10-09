@@ -1,0 +1,10 @@
+{"ts": 1791521451.9392104, "iso": "2026-10-09T04:50:51", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm", "weights": false, "count": 0, "latest_doc_ts": null, "ts": 1791521451.9375143}}
+{"ts": 1791521452.4010737, "iso": "2026-10-09T04:50:52", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1791521445.719172, "embed_model_version": "embed-model=vi-e5-base@v3", "rpo_seconds": 6.0, "docs_lost": 3, "primary_latest_doc_ts": 1791521451.6401687, "restored_latest_doc_ts": 1791521445.6390953}
+{"ts": 1791521452.4240513, "iso": "2026-10-09T04:50:52", "step": "3_scale_pool", "target": "b", "pool_state": "full"}
+{"ts": 1791521458.8467052, "iso": "2026-10-09T04:50:58", "step": "4_wait_ready", "target": "b", "ready": true, "waited_s": 6.41, "reasons": []}
+{"ts": 1791521458.878605, "iso": "2026-10-09T04:50:58", "step": "5_dns_cutover", "target": "b", "previous": "a", "active_region": "b"}
+{"ts": 1791521640.7549682, "iso": "2026-10-09T04:54:00", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1791521640.9452505, "iso": "2026-10-09T04:54:00", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1791521640.7709522, "embed_model_version": "test", "rpo_seconds": 76.01, "docs_lost": 38, "primary_latest_doc_ts": 1791521521.6530735, "restored_latest_doc_ts": 1791521445.6390953}
+{"ts": 1791521640.9780505, "iso": "2026-10-09T04:54:00", "step": "3_scale_pool", "target": "b", "pool_state": "full"}
+{"ts": 1791521641.9949486, "iso": "2026-10-09T04:54:01", "step": "4_wait_ready", "target": "b", "ready": false, "waited_s": 1.0, "reasons": ["ConnectError"]}
+{"ts": 1791521642.0141218, "iso": "2026-10-09T04:54:02", "step": "abort", "target": "b", "reason": "target_not_ready_before_cutover", "last_reasons": ["ConnectError"], "note": "KHONG cutover: active_region giu nguyen"}
